@@ -193,7 +193,7 @@ export default function Lupetti() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link to={createPageUrl("Home#branche")}>
+              <Link to={"/#branche"}>
                 <Button variant="outline" size="lg" className="border-2 border-orange-500 text-orange-600 hover:bg-orange-50 px-8 py-4 text-lg rounded-xl">
                   <Users className="w-5 h-5 mr-2" />
                   Scopri le Altre Branche

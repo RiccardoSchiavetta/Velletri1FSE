@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { supabase } from "../supabaseClient";  // Assumi path corretto al tuo supabaseClient.js
-import { Resend } from 'resend';  // Importa Resend
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -37,28 +36,6 @@ export default function Contatti() {
         });
 
       if (dbError) throw dbError;
-
-      // Invia email con Resend
-      const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY);
-      await resend.emails.send({
-        from: 'noreply@tuodominio.it',  // Sostituisci con il tuo from verificato su Resend
-        to: 'gruppo@velletri1.it',
-        subject: `Nuova richiesta di informazioni - ${formData.name}`,
-        text: `
-Nuova richiesta di informazioni ricevuta:
-
-Nome: ${formData.name}
-Email: ${formData.email}
-Telefono: ${formData.phone}
-Età bambino/ragazzo: ${formData.child_age} anni
-Branca di interesse: ${formData.branch_interest}
-
-Messaggio:
-${formData.message}
-
-Contatta la famiglia il prima possibile per fornire tutte le informazioni richieste.
-        `
-      });
 
       setShowSuccess(true);
       setFormData({

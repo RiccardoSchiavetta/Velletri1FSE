@@ -192,7 +192,7 @@ export default function Coccinelle() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link to={createPageUrl("Home#branche")}>
+              <Link to="/#branche">
                 <Button variant="outline" size="lg" className="border-2 border-red-500 text-red-600 hover:bg-red-50 px-8 py-4 text-lg rounded-xl">
                   <Users className="w-5 h-5 mr-2" />
                   Scopri le Altre Branche

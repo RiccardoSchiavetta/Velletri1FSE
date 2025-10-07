@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Mail, Package, Home, Users, PawPrint, MapPin, Phone, Facebook, Instagram, Circle, Menu, ChevronDown, Bug, Tent, Compass, Backpack, Flame, Trees } from "lucide-react";
+import { Mail, Package, Home, Users, PawPrint, MapPin, Phone, Circle, Menu, ChevronDown, Bug, Tent, Compass, Backpack, Flame, Trees } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -54,7 +54,7 @@ export default function Layout({ children, currentPageName }) {
       <header className="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-[#2d5016]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-20">
-            <Link to={createPageUrl("Home")} className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">  {/* Changed to "/" */}
               <div className="w-12 h-12 flex items-center justify-center">
                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/5a303ff31_scout_cDj_icon-5.png" alt="Logo FSE Velletri 1" className="w-10 h-10 object-contain" />
               </div>
@@ -188,14 +188,6 @@ export default function Layout({ children, currentPageName }) {
               <p className="text-[#d4b896] leading-relaxed">
                 Educare i giovani attraverso i valori scout, sviluppando carattere, cittadinanza e forma fisica per costruire un mondo migliore.
               </p>
-              <div className="flex space-x-4 mt-6">
-                <a href="#" className="text-[#4ade80] hover:text-white transition-colors">
-                  <Facebook className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-[#4ade80] hover:text-white transition-colors">
-                  <Instagram className="w-6 h-6" />
-                </a>
-              </div>
             </div>
           </div>
 

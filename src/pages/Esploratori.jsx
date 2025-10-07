@@ -222,7 +222,7 @@ export default function Esploratori() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link to={createPageUrl("Home#branche")}>
+              <Link to="/#branche">
                 <Button variant="outline" size="lg" className="border-2 border-green-600 text-green-700 hover:bg-green-50 px-8 py-4 text-lg rounded-xl">
                   <Trees className="w-5 h-5 mr-2" />
                   Scopri le Altre Branche

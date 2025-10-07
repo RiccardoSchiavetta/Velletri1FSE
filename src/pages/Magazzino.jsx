@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { supabase } from "../supabaseClient";
-import { Resend } from 'resend';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -175,15 +174,6 @@ export default function Magazzino() {
         });
 
       if (dbError) throw dbError;
-
-      // Invia email con Resend
-      const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY);
-      await resend.emails.send({
-        from: 'noreply@tuodominio.it',  // Sostituisci con il tuo from verificato su Resend
-        to: 'magazzino@velletri1.it',
-        subject: `Nuovo ordine materiale da ${userInfo.name}`,
-        text: `Nuova richiesta di ordine ricevuta:\n\n**Richiedente:**\nNome: ${userInfo.name}\nEmail: ${userInfo.email}\nTelefono: ${userInfo.phone || "Non fornito"}\n\n**Dettagli Ordine:**\n${orderDetails}\n\nSi prega di contattare il richiedente per confermare la disponibilità e le modalità di ritiro.`
-      });
 
       setShowSuccess(true);
       setCart([]);
