@@ -4,14 +4,14 @@ import { User, Users, Shield, Award, Heart } from 'lucide-react';
 
 export default function ChiSiamo() {
   const staff = [
-    { name: "Mario Rossi", role: "Capo Gruppo", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=MR" },
-    { name: "Luisa Bianchi", role: "Aiuto Capo Gruppo", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=LB" },
-    { name: "Paolo Verdi", role: "Akela (Capo Unità Lupetti)", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=PV" },
-    { name: "Laura Gialli", role: "Capo Cerchio (Capo Unità Coccinelle)", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=LG" },
-    { name: "Giovanni Neri", role: "Capo Riparto Esploratori", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=GN" },
-    { name: "Chiara Marroni", role: "Capo Riparto Guide", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=CM" },
-    { name: "Luca Bruno", role: "Capo Clan (Capo Unità Rover)", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=LB" },
-    { name: "Anna Azzurri", role: "Capo Fuoco (Capo Unità Scolte)", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=AA" },
+    { name: "Alessandra Skof", role: "Capo Gruppo", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=AS" },
+    { name: "Gaetano Ventura", role: "Aiuto Capo Gruppo", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=GV" },
+    { name: "Marco Molteni", role: "Akela", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=MM" },
+    { name: "Elisa Cianfarani", role: "Capo Cerchio", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=EC" },
+    { name: "Gabrile Castrichella", role: "Capo Riparto Esploratori", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=GC" },
+    { name: "Sara Giuliano", role: "Capo Riparto Guide", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=SG" },
+    { name: "Simone Sabbatini", role: "Capo Clan", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=SS" },
+    { name: "Camilla Mattoccia", role: "Capo Fuoco", avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=CM" },
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function ChiSiamo() {
             Chi Siamo
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Lo staff educativo del gruppo FSE Velletri 1, al servizio dei ragazzi.
+            I capi unità del gruppo FSE Velletri 1, al servizio dei ragazzi.
           </p>
         </div>
 
@@ -44,7 +44,6 @@ export default function ChiSiamo() {
         </Card>
 
         <div>
-          <h2 className="text-3xl font-bold text-[#2d5016] text-center mb-10">La Comunità Capi (Co.Ca.)</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {staff.map((capo) => (
               <div key={capo.name} className="text-center flex flex-col items-center">
@@ -58,9 +57,6 @@ export default function ChiSiamo() {
               </div>
             ))}
           </div>
-           <p className="text-center text-gray-500 mt-8 italic">
-              I nomi e le foto sono a scopo illustrativo. Saranno sostituiti con i dati reali.
-            </p>
         </div>
       </div>
     </div>

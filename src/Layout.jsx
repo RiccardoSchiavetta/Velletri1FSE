@@ -56,7 +56,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex justify-between items-center h-20">
             <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">  {/* Changed to "/" */}
               <div className="w-12 h-12 flex items-center justify-center">
-                 <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/5a303ff31_scout_cDj_icon-5.png" alt="Logo FSE Velletri 1" className="w-10 h-10 object-contain" />
+                 <img src="/src/img/FseIcon.ico" alt="Logo FSE Velletri 1" className="w-10 h-10 object-contain" />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-[#2d5016]">FSE - Velletri 1</h1>
@@ -152,15 +152,17 @@ export default function Layout({ children, currentPageName }) {
               <div className="space-y-3 text-[#d4b896]">
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2 text-[#4ade80]" />
-                  <span>Sede San Clemente, Velletri (RM)</span>
+                  <a href="https://maps.app.goo.gl/DgBQB22ssFTFob2t9" target="_blank" rel="noopener noreferrer" className="block text-[#d4b896] hover:text-white transition-colors">
+                  Cattedrale di San Clemente, Velletri (RM)
+                </a>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-4 h-4 mr-2 text-[#4ade80]" />
-                  <span>+39 333 1234567</span>
+                  <a href="tel:065884430">065884430</a>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-2 text-[#4ade80]" />
-                  <span>gruppo@velletri1.it</span>
+                  <a href="mailto:ric851635@gmail.com">velletri1@fse.it</a>
                 </div>
               </div>
             </div>
@@ -175,7 +177,7 @@ export default function Layout({ children, currentPageName }) {
                   Come Iscriversi
                 </Link>
                 <Link to={createPageUrl("Magazzino")} className="block text-[#d4b896] hover:text-white transition-colors">
-                  Uniforme Scout
+                  Acquista l'uniforme
                 </Link>
                 <a href="https://www.fse.it" target="_blank" rel="noopener noreferrer" className="block text-[#d4b896] hover:text-white transition-colors">
                   FSE Italia

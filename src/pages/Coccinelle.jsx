@@ -51,7 +51,7 @@ export default function Coccinelle() {
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🐞</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Branca Coccinelle
+            Coccinelle
             <span className="block text-2xl font-normal mt-2 text-yellow-100">
               8 - 11 anni
             </span>
@@ -72,14 +72,22 @@ export default function Coccinelle() {
                 Benvenute nel Bosco Incantato!
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Le Coccinelle vivono la loro avventura nel <strong>Bosco Incantato</strong>, 
-                un ambiente fantastico dove ogni bambina, membro del "Cerchio", 
-                impara a conoscere se stessa e il mondo attraverso il gioco e la condivisione.
+                La nostra branca Coccinelle, come tutte le Branche, ha un Metodo che si 
+                propone di aiutare le bambine a crescere in modo sereno ed equilibrato, 
+                <strong>sviluppando le proprie doti personali</strong> e proponendo loro ideali positivi 
+                da realizzare. Il programma educativo è strutturato seguendo gli ambiti 
+                di <strong>formazione cristiana</strong> e i <strong>quattro punti formativi</strong> indicati dal nostro 
+                fondatore B.-P., in modo che l’azione educativa sia efficacia per lo sviluppo 
+                armonico della bambina. Le attività sono realizzate a contatto con l’ambiente 
+                naturale attraverso il gioco, l’osservazione e le buone abitudini e ciò permette loro di conoscere sé stesse e la loro unicità.  
+                
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Guidate dalle "Vecchie Coccinelle", le bambine scoprono la bellezza della natura, 
-                il valore dell'amicizia e la gioia di donare il proprio aiuto, seguendo i "sette punti" 
-                della Legge del Cerchio.
+                Immersa nella natura, la Coccinella percorre un <strong>cammino graduale</strong> che 
+                l’aiuterà a scoprire, possedere e donare la Vera Gioia. 
+                Percorrendo il suo cammino, la Coccinella interiorizza la Legge, 
+                7 principi che diventeranno per lei i 7 punti a cui fare riferimento 
+                per diventare responsabile e testimone dell’amore di Dio.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center bg-red-50 px-4 py-2 rounded-full">
@@ -102,13 +110,13 @@ export default function Coccinelle() {
                   <div className="space-y-2 text-gray-700">
                     <p><strong>Quando:</strong> Ogni domenica</p>
                     <p><strong>Orario:</strong> 9:30 - 12:30</p>
-                    <p><strong>Dove:</strong> Sede San Clemente, Velletri</p>
+                    <p><strong>Dove:</strong> Cattedrale di San Clemente</p>
                   </div>
                 </div>
               </Card>
                <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capi Unità</h3>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
                         <div className="flex items-center justify-center text-gray-700">
                             <Phone className="w-5 h-5 mr-3 text-red-600" />
                             <div>
@@ -161,9 +169,12 @@ export default function Coccinelle() {
               <h3 className="text-2xl font-bold mb-6">La Promessa della Coccinella</h3>
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <p className="text-xl leading-relaxed text-center italic">
-                  "Prometto, con l'aiuto di Gesù, di fare del mio meglio 
-                  per essere fedele a Dio, alla Patria, ai miei genitori, 
-                  alla Legge del Bosco, e per fare un favore a qualcuno ogni giorno."
+                  "Con l’aiuto di Dio prometto
+                  di fare del mio meglio
+                  per essere fedele a Dio, ai miei
+                  genitori e alla mia Patria,
+                  per osservare la Legge delle Coccinelle
+                  e fare un favore a qualcuno ogni giorno."
                 </p>
               </div>
               <div className="mt-6 text-center">

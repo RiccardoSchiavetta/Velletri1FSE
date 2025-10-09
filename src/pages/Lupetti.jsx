@@ -10,17 +10,17 @@ export default function Lupetti() {
   const activities = [
     {
       title: "Giochi nella Giungla",
-      description: "Avventure ispirate al Libro della Giungla di Kipling",
+      description: "Avventure ispirate al Libro della Giungla",
       icon: "🐺"
     },
     {
       title: "Attività Manuali",
-      description: "Costruzioni, disegni e lavoretti creativi",
+      description: "Costruzioni, nodi e lavoretti creativi",
       icon: "🎨"
     },
     {
       title: "Vita all'Aria Aperta", 
-      description: "Escursioni, giochi nel bosco e osservazione della natura",
+      description: "Uscite, giochi nel bosco e osservazione della natura",
       icon: "🌲"
     },
     {
@@ -51,7 +51,7 @@ export default function Lupetti() {
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🐺</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Branca Lupetti
+            Lupetti
             <span className="block text-2xl font-normal mt-2 text-yellow-100">
               8 - 11 anni
             </span>
@@ -72,14 +72,20 @@ export default function Lupetti() {
                 Benvenuti nella Giungla!
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                I Lupetti vivono le loro avventure nella fantastica atmosfera del 
-                <strong> Libro della Giungla</strong> di Rudyard Kipling. Ogni bambino è un "lupetto" 
-                che fa parte del "branco" guidato da Akela e dagli altri "Vecchi Lupi".
+                Proponiamo di <strong>giocare insieme</strong>, all’aperto, imparando ad avere 
+                <strong>fiducia in se stessi</strong> e vivendo in un clima di <strong>Famiglia 
+                Felice</strong> lo spirito di cristiana letizia e <strong>comunione fraterna</strong>. I Lupetti, immersi nelle storie di <strong>Mowgli</strong>, imparano a 
+                fare del loro meglio per superare ostacoli di difficoltà progressivamente crescente. Con la pratica della 
+                Buona Azione quotidiana iniziano a comprendere la gioia del Servizio al prossimo.
+                
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Attraverso il <strong>gioco</strong>, elemento fondamentale di questa età, 
-                i bambini scoprono il mondo che li circonda, imparano le prime regole 
-                della vita comunitaria e sviluppano le loro capacità fisiche e creative.
+                <strong>La Legge del Branco</strong> dice “Il lupetto ascolta il Vecchi Lupo, 
+                il lupetto non ascolta se stesso”.Guidati dall’esempio dei <strong>Vecchi Lupi</strong>, loro fratelli maggiori, 
+                i Lupetti imparano che per giocare e vivere bene occorre <strong>rispettare 
+                le regole e i propri compagni</strong>. Con canti gioiosi, seguono la strada indicata 
+                da <strong>S. Francesco</strong>, loro patrono, per avvicinarsi all’amicizia con Gesù.
+                
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center bg-yellow-50 px-4 py-2 rounded-full">
@@ -102,13 +108,13 @@ export default function Lupetti() {
                     <div className="space-y-2 text-gray-700">
                         <p><strong>Quando:</strong> Ogni domenica</p>
                         <p><strong>Orario:</strong> 9:30 - 12:30</p>
-                        <p><strong>Dove:</strong> Sede San Clemente, Velletri</p>
+                        <p><strong>Dove:</strong> Cattedrale di San Clemente</p>
                     </div>
                     </div>
                 </Card>
                 <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capi Unità</h3>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
                         <div className="flex items-center justify-center text-gray-700">
                             <Phone className="w-5 h-5 mr-3 text-green-600" />
                             <div>
@@ -161,10 +167,11 @@ export default function Lupetti() {
               <h3 className="text-2xl font-bold mb-6">La Promessa del Lupetto</h3>
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <p className="text-xl leading-relaxed text-center italic">
-                  "Prometto, con l'aiuto e l'esempio di Gesù, 
-                  di fare del mio meglio per essere fedele a Dio, 
-                  alla Patria, ai miei genitori, alla Legge del Branco, 
-                  e per compiere ogni giorno una buona azione."
+                  "Con l’aiuto di Dio,
+                  prometto di fare del mio meglio
+                  per essere fedele a Dio, ai miei genitori, alla mia Patria;
+                  per osservare la Legge del Branco
+                  e fare una buona azione a vantaggio di qualcuno ogni giorno."
                 </p>
               </div>
               <div className="mt-6 text-center">

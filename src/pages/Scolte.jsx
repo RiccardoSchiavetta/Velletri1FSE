@@ -15,7 +15,7 @@ export default function Scolte() {
     },
     {
       title: "Servizio",
-      description: "Impegno volontario in progetti sociali e comunitari",
+      description: "Impegno volontario in progetti sociali e nelle altre branche",
       icon: "❤️"
     },
     {
@@ -51,7 +51,7 @@ export default function Scolte() {
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🔥</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Branca Scolte
+            Scolte
             <span className="block text-2xl font-normal mt-2 text-red-100">
               17 - 21 anni
             </span>
@@ -72,14 +72,18 @@ export default function Scolte() {
                 Donne in Cammino
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Le <strong>Scolte</strong> rappresentano il momento delle grandi scelte. 
-                In una comunità chiamata <strong>Fuoco</strong>, le giovani donne si confrontano 
-                sui grandi temi della vita, preparandosi a diventare protagoniste nella società e nella Chiesa.
+                Il cammino della Scolta offre alla ragazza un’opportunità di approfondimento della vita spirituale, 
+                sociale, culturale e fisica. Tutte le tecniche imparate e le doti acquisite sono unificate nell’equilibrio 
+                della persona attraverso i quattro 
+                punti nei quali si articola il programma delle Scolte: <strong>comunità, strada, servizio, fede.</strong>
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Attraverso la <strong>Strada</strong>, il <strong>Servizio</strong> e la <strong>Comunità</strong>, 
-                ogni Scolta è chiamata a scrivere la "Carta di Fuoco", un documento personale 
-                che delinea il proprio progetto di vita e di fede.
+                Il fine è formare una donna di carattere, capace di costruire attorno a sé rapporti di 
+                ollaborazione e rispetto. Fare strada, adattarsi a piccoli spazi, essere pronta: 
+                dimostrano alla ragazza che può affrontare ogni sfida a fronte alta e far suoi 
+                gli insegnamenti della vita all’aperto, 
+                come la semplicità, l’ottimismo, la serenità e la generosità. 
+                Tutte qualità che caratterizzano la Scolta.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center bg-rose-50 px-4 py-2 rounded-full">
@@ -102,13 +106,13 @@ export default function Scolte() {
                   <div className="space-y-2 text-gray-700">
                     <p><strong>Quando:</strong> Ogni domenica</p>
                     <p><strong>Orario:</strong> 9:30 - 12:30</p>
-                    <p><strong>Dove:</strong> Sede San Clemente e Territorio</p>
+                    <p><strong>Dove:</strong> Cattedrale di San Clemente</p>
                   </div>
                 </div>
               </Card>
               <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capi Unità</h3>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
                         <div className="flex items-center justify-center text-gray-700">
                             <Phone className="w-5 h-5 mr-3 text-rose-600" />
                             <div>
@@ -123,7 +127,7 @@ export default function Scolte() {
           {/* Activities Grid */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-[#2d5016] text-center mb-12">
-              I Nostri Pilastri
+              Il metodo Scolte
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {activities.map((activity, index) => (

@@ -8,53 +8,53 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Package, Send, CheckCircle2, ShoppingCart, Minus, Plus, Shirt, Info } from "lucide-react";
+import { Package, Send, CheckCircle2, ShoppingCart, Minus, Plus, Info, Euro } from "lucide-react";
 
 const uniformProducts = {
   "Lupetti": [
-    { name: "MAGLIETTA ESTIVA VERDE LUPETTO", sizes: ["5 / 6 ANNI", "6 / 7 ANNI", "7 / 8 ANNI", "9 / 10 ANNI", "11 / 12 ANNI", "13 / 14 ANNI", "XS", "S"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/61c8c35ec_image.png" },
-    { name: "MAGLIONE VERDE LUPETTO", sizes: ["5 / 6 ANNI", "6 / 7 ANNI", "7 / 8 ANNI", "9 / 10 ANNI", "11 / 12 ANNI", "13 / 14 ANNI", "XS", "S"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/3c617ae57_image.png" },
-    { name: "BERRETTO LUPETTO", sizes: ["XXS circonf.testa 51/52", "XS circonf.testa 53/54", "S circonf.testa 55/56", "M circonf.testa 57/58", "L circonf.testa 59/60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/44f009acd_image.png" },
-    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/ab9567fd7_image.png" },
-    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/a2bfda177_image.png" },
-    { name: "CINTURA SCOUT IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/713eda313_image.png" }
+    { name: "MAGLIETTA VERDE", sizes: ["5 / 6 ANNI", "6 / 7 ANNI", "7 / 8 ANNI", "9 / 10 ANNI", "11 / 12 ANNI", "13 / 14 ANNI", "XS", "S"], imageUrl: "/src/img/MagliaLupetto.png", price: 16.00 },
+    { name: "MAGLIONE VERDE", sizes: ["5 / 6 ANNI", "6 / 7 ANNI", "7 / 8 ANNI", "9 / 10 ANNI", "11 / 12 ANNI", "13 / 14 ANNI", "XS", "S"], imageUrl: "/src/img/MaglioneLupetto.png", price: 24.00 },
+    { name: "BERRETTO LUPETTO", sizes: ["XXS circonf.testa 51/52", "XS circonf.testa 53/54", "S circonf.testa 55/56", "M circonf.testa 57/58", "L circonf.testa 59/60"], imageUrl: "/src/img/BerrettoLupetto.png", price: 14.00 },
+    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniCorti.png", price: 24.00 },
+    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniLunghi.png", price: 28.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
   ],
   "Coccinelle": [
-    { name: "CAMICIA GUIDA", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/a3802486e_image.png" },
-    { name: "MAGLIONE BLU SCOUT", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/695c68a4a_image.png" },
-    { name: "ZUCCHETTO COCCINELLA", sizes: ["TAGLIA UNICA"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/6c0f181c7_image.png" },
-    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/22adbde7f_image.png" },
-    { name: "CINTURA SCOUT IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/713eda313_image.png" }
+    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaBlu.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
+    { name: "ZUCCHETTO COCCINELLA", sizes: ["TAGLIA UNICA"], imageUrl: "/src/img/Zucchetto.png", price: 14.00 },
+    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/GonnaPantalone.png", price: 24.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
   ],
   "Esploratori": [
-    { name: "CAMICIA SCOUT", sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/8f9ab29a9_image.png" },
-    { name: "MAGLIONE BLU SCOUT", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/695c68a4a_image.png" },
-    { name: "CAPPELLONE SCOUT FLEXIBLE", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/d21be1328_image.png" },
-    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/ab9567fd7_image.png" },
-    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/a2bfda177_image.png" },
-    { name: "CINTURA SCOUT IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/713eda313_image.png" }
+    { name: "CAMICIA KHAKI", sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaScout.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
+    { name: "CAPPELLONE KHAKI", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/src/img/CappelloneScout.png", price: 36.00 },
+    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniCorti.png", price: 24.00 },
+    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniLunghi.png", price: 28.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
   ],
   "Guide": [
-    { name: "CAMICIA GUIDA", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/a3802486e_image.png" },
-    { name: "MAGLIONE BLU SCOUT", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/695c68a4a_image.png" },
-    { name: "CAPPELLONE GUIDA FLEXIBLE", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/4fae304fd_image.png" },
-    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/22adbde7f_image.png" },
-    { name: "CINTURA SCOUT IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/713eda313_image.png" }
+    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaBlu.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
+    { name: "CAPPELLONE BLU", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/src/img/CappelloneBlu.png", price: 36.00 },
+    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/GonnaPantalone.png", price: 24.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
   ],
   "Rover": [
-    { name: "CAMICIA SCOUT", sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/8f9ab29a9_image.png" },
-    { name: "MAGLIONE BLU SCOUT", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/695c68a4a_image.png" },
-    { name: "CAPPELLONE SCOUT FLEXIBLE", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/d21be1328_image.png" },
-    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/ab9567fd7_image.png" },
-    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/a2bfda177_image.png" },
-    { name: "CINTURA SCOUT IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/713eda313_image.png" }
+    { name: "CAMICIA KHAKI", sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaScout.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
+    { name: "CAPPELLONE KHAKI", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/src/img/CappelloneScout.png", price: 36.00 },
+    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniCorti.png", price: 24.00 },
+    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniLunghi.png", price: 28.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
   ],
   "Scolte": [
-    { name: "CAMICIA GUIDA", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/a3802486e_image.png" },
-    { name: "MAGLIONE BLU SCOUT", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/695c68a4a_image.png" },
-    { name: "BASCO NERO", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/4926abe71_image.png" },
-    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/22adbde7f_image.png" },
-    { name: "CINTURA SCOUT IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68d1bf68b44f5b4cd1e4d2fb/713eda313_image.png" }
+    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaBlu.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
+    { name: "BASCO NERO", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/src/img/Basco.png", price: 12.00 },
+    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/GonnaPantalone.png", price: 24.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
   ]
 };
 
@@ -71,16 +71,20 @@ const ItemCard = ({ item, onAddToCart }) => {
   };
 
   return (
-    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
-      <div className="overflow-hidden">
+    <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group border-2 border-transparent hover:border-[#4ade80]">
+      <div className="relative overflow-hidden bg-white h-64">
         <img 
             src={item.imageUrl} 
             alt={item.name} 
-            className="w-full h-56 object-contain bg-white p-2 transition-transform duration-300 group-hover:scale-110" 
+            className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110" 
         />
       </div>
       <CardContent className="p-4 flex-grow">
-        <h3 className="font-bold text-md text-[#2d5016]">{item.name}</h3>
+        <h3 className="font-bold text-md text-[#2d5016] mb-2">{item.name}</h3>
+        <div className="flex items-center text-2xl font-bold text-[#15803d]">
+          <Euro className="w-5 h-5 mr-1" />
+          {item.price.toFixed(2)}
+        </div>
       </CardContent>
       <CardFooter className="p-4 bg-gray-50 flex flex-col items-start space-y-3">
         <div className="w-full flex items-center justify-between">
@@ -145,15 +149,21 @@ export default function Magazzino() {
     setUserInfo(prev => ({ ...prev, [field]: value }));
   };
 
+  const calculateTotal = () => {
+    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+  };
+
   const generateOrderDetails = () => {
     return cart
-      .map(item => `- ${item.quantity} x ${item.name} (Taglia: ${item.size})`)
+      .map(item => `- ${item.quantity} x ${item.name} (Taglia: ${item.size}) - €${(item.price * item.quantity).toFixed(2)}`)
       .join("\n");
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const orderDetails = generateOrderDetails();
+    const total = calculateTotal();
+    
     if (cart.length === 0) {
       setError("Il carrello è vuoto. Aggiungi almeno un articolo.");
       return;
@@ -170,7 +180,7 @@ export default function Magazzino() {
           name: userInfo.name,
           email: userInfo.email,
           phone: userInfo.phone,
-          order_details: orderDetails,
+          order_details: orderDetails + `\n\nTOTALE: €${total.toFixed(2)}`,
         });
 
       if (dbError) throw dbError;
@@ -264,7 +274,7 @@ export default function Magazzino() {
                 {showSuccess && (
                   <Alert className="mb-4 border-green-200 bg-green-50 text-green-800">
                     <CheckCircle2 className="w-4 h-4" />
-                    <AlertDescription>Ordine inviato! Sarai ricontattato a breve.</AlertDescription>
+                    <AlertDescription>Ordine inviato! Sarai ricontattato il prima possibile.</AlertDescription>
                   </Alert>
                 )}
                 {error && (
@@ -276,12 +286,13 @@ export default function Magazzino() {
                 <div className="space-y-3 mb-6 max-h-60 overflow-y-auto pr-2">
                   {cart.length > 0 ? (
                     cart.map(item => (
-                      <div key={item.id} className="flex justify-between items-center text-sm">
-                        <div>
+                      <div key={item.id} className="flex justify-between items-start text-sm border-b border-gray-200 pb-3">
+                        <div className="flex-1">
                           <p className="font-semibold text-gray-800">{item.name}</p>
                           <p className="text-gray-600">Q.tà: {item.quantity} - Taglia: {item.size}</p>
+                          <p className="text-[#15803d] font-bold">€{(item.price * item.quantity).toFixed(2)}</p>
                         </div>
-                        <Button variant="ghost" size="icon" className="text-red-500 hover:text-red-700" onClick={() => handleRemoveFromCart(item.id)}>
+                        <Button variant="ghost" size="icon" className="text-red-500 hover:text-red-700 hover:bg-red-50" onClick={() => handleRemoveFromCart(item.id)}>
                           <Minus className="h-4 w-4" />
                         </Button>
                       </div>
@@ -290,6 +301,18 @@ export default function Magazzino() {
                     <p className="text-center text-gray-500 py-4">Il tuo carrello è vuoto.</p>
                   )}
                 </div>
+
+                {cart.length > 0 && (
+                  <div className="border-t-2 border-[#2d5016] pt-4 mb-6">
+                    <div className="flex justify-between items-center text-xl font-bold text-[#2d5016]">
+                      <span>TOTALE:</span>
+                      <span className="flex items-center">
+                        <Euro className="w-5 h-5 mr-1" />
+                        {calculateTotal().toFixed(2)}
+                      </span>
+                    </div>
+                  </div>
+                )}
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                    <div>

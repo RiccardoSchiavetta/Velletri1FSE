@@ -15,11 +15,11 @@ export default function Guide() {
     },
     {
       title: "Tecniche Scout",
-      description: "Nodi, costruzioni, topografia e orientamento",
+      description: "Pionieristica, pronto soccorso, espressione scout e topografia",
       icon: "🧭"
     },
     {
-      title: "Gioco di Squadriglia",
+      title: "Vita di Squadriglia",
       description: "Lavoro di squadra e leadership condivisa",
       icon: "👥"
     },
@@ -51,13 +51,13 @@ export default function Guide() {
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <div className="text-6xl mb-6">⚜️</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Branca Guide
+            Guide
             <span className="block text-2xl font-normal mt-2 text-green-100">
               12 - 16 anni
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-green-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            "Estote Paratae" - Sii Preparata! Il sentiero dell'avventura per diventare 
+            "Estote Parati" - Siate Pronti! Il sentiero dell'avventura per diventare 
             donne responsabili e protagoniste del domani.
           </p>
         </div>
@@ -72,14 +72,16 @@ export default function Guide() {
                 Il Sentiero dell'Avventura
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Le <strong>Guide</strong> affrontano l'avventura della crescita attraverso il sistema delle 
-                <strong>Squadriglie</strong>. Ogni ragazza impara a conoscere i propri talenti e a metterli 
-                al servizio del gruppo, sviluppando un forte senso di responsabilità e spirito di squadra.
+                Con il gioco leale, la Vita all’Aperto e l’organizzazione in piccoli gruppi chiamati “Squadriglie”, 
+                le Guide si preparano a <strong>diventare donne di carattere</strong>. Esse acquistano salute ed equilibrio, imparando ad amare e 
+                servire il prossimo gioiosamente e a scoprire il senso del proprio impegno verso Dio, la Patria ed il prossimo.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                La vita all'aria aperta, i campeggi e le tecniche scout sono gli strumenti 
-                privilegiati per formare il carattere, acquisire autonomia e scoprire la bellezza 
-                del creato e della fraternità.
+                <strong>Avventura</strong> e <strong>vita nella natura</strong>: queste sono due delle parole che riassumono 
+                le grandi esperienze che le Guide sono chiamate a vivere nei loro anni in Riparto. Un intreccio di giochi, 
+                scoperta della natura e di tutto ciò che le circonda, abilità manuale fatta di nodi 
+                e costruzioni per arrivare fino alle grandi imprese come la realizzazione della propria 
+                “casa” durante il Campo Estivo, attività culmine dell’anno scout.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center bg-emerald-50 px-4 py-2 rounded-full">
@@ -102,13 +104,13 @@ export default function Guide() {
                   <div className="space-y-2 text-gray-700">
                     <p><strong>Quando:</strong> Ogni domenica</p>
                     <p><strong>Orario:</strong> 9:30 - 12:30</p>
-                    <p><strong>Dove:</strong> Sede San Clemente e Natura</p>
+                    <p><strong>Dove:</strong> Cattedrale di San Clemente</p>
                   </div>
                 </div>
               </Card>
               <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capi Unità</h3>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
                         <div className="flex items-center justify-center text-gray-700">
                             <Phone className="w-5 h-5 mr-3 text-emerald-600" />
                             <div>
@@ -172,6 +174,29 @@ export default function Guide() {
                     <span className="text-gray-700 text-lg">{skill}</span>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Promise Section */}
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-12 mb-16">
+            <h2 className="text-3xl font-bold text-[#2d5016] text-center mb-8">
+              La Promessa Scout
+            </h2>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white rounded-xl p-8 shadow-md">
+                <p className="text-xl text-center leading-relaxed text-gray-800 italic">
+                  "Con l'aiuto di Dio prometto sul mio onore di fare del mio meglio:<br/><br/>
+                  - per servide Dio, la Chiesa, la Patria e l'Europa<br/>
+                  - per aiutare il prossimo in ogni circostanza<br/>
+                  - per osservare la Legge Scout"
+                </p>
+              </div>
+              <div className="text-center mt-6">
+                <div className="text-4xl mb-2">🏕️</div>
+                <p className="text-green-700 font-semibold">
+                  <em>"Estote Parati - Siate Pronti"</em>
+                </p>
               </div>
             </div>
           </div>

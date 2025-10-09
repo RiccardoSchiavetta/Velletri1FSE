@@ -9,24 +9,24 @@ import { Backpack, Heart, HandHeart, GraduationCap, Users, ArrowRight, CheckCirc
 export default function Rover() {
   const activities = [
     {
-      title: "Route e Cammini",
-      description: "Grandi cammini a piedi alla scoperta di sé e della natura",
+      title: "Strada",
+      description: "Uscite a piedi alla scoperta di sé e della natura",
       icon: "🎒"
     },
     {
-      title: "Servizio Sociale",
-      description: "Impegno concreto verso i più bisognosi della comunità",
+      title: "Comunità",
+      description: "Comunità fraterna di crescita e condivisione",
+      icon: "🤝"
+    },
+    {
+      title: "Servizio",
+      description: "Impegno concreto verso i più bisognosi e le altre branche",
       icon: "❤️"
     },
     {
-      title: "Formazione Professionale",
-      description: "Orientamento e preparazione al mondo del lavoro",
-      icon: "🎓"
-    },
-    {
-      title: "Vita di Clan",
-      description: "Comunità fraterna di crescita e condivisione",
-      icon: "🤝"
+      title: "Vita di Fede",
+      description: "Crescita spirituale e impegno cristiano presente in tutte le attività",
+      icon: "🙏"
     }
   ];
 
@@ -34,7 +34,6 @@ export default function Rover() {
     "Preparazione alla vita adulta responsabile",
     "Servizio disinteressato verso il prossimo",
     "Formazione cristiana matura e consapevole",
-    "Sviluppo di competenze professionali e sociali",
     "Costruzione di relazioni autentiche e durature"
   ];
 
@@ -53,7 +52,7 @@ export default function Rover() {
             <Backpack className="w-16 h-16 inline-block" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Branca Rover
+            Rover
             <span className="block text-2xl font-normal mt-2 text-red-100">
               17 - 21 anni
             </span>
@@ -74,14 +73,18 @@ export default function Rover() {
                 La Strada verso l'Età Adulta
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                I <strong>Rover</strong> rappresentano il vertice dell'educazione scout. 
-                In questa fase della vita, i giovani adulti sono chiamati a diventare 
-                protagonisti della propria crescita e del servizio verso la comunità.
+                Lungo la <strong>strada</strong> il Rover matura le sue scelte di vita per divenire un Uomo 
+                nel significato completo e cristiano della parola. Con la cerimonia della <strong>Partenza</strong>, 
+                coronamento della Promessa Scout e conclusione del cammino in Clan, il Rover 
+                s’impegna a realizzare i più alti valori di vita e a svolgere un <strong>servizio</strong> continuativo 
+                e disinteressato, coerente con la sua vita di fede.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                La <strong>Route</strong>, il cammino a piedi simbolo di questa branca, 
-                diventa metafora del percorso di vita: ogni passo è una scelta consapevole 
-                verso la costruzione di un futuro responsabile e solidale.
+                Strada come metafora di vita ma anche come strada fisica, 
+                si dice “il Roverismo entra dai piedi”. Nella <strong>Comunità</strong> di Clan 
+                si mescolano i singoli pregi e difetti dei singoli al fine di crescere 
+                assieme. Il Servizio inteso come scelta di vita porterà il Rover a diventare 
+                uomo per gli altri. La <strong>Fede</strong> permea ogni momento della vita del Rover, sia esso Strada Comunità o Servizio
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center bg-blue-50 px-4 py-2 rounded-full">
@@ -104,13 +107,13 @@ export default function Rover() {
                   <div className="space-y-2 text-gray-700">
                     <p><strong>Quando:</strong> Ogni domenica</p>
                     <p><strong>Orario:</strong> 9:30 - 12:30</p>
-                    <p><strong>Dove:</strong> Sede San Clemente e Territorio</p>
+                    <p><strong>Dove:</strong> Cattedrale di San Clemente</p>
                   </div>
                 </div>
               </Card>
               <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capi Unità</h3>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
                         <div className="flex items-center justify-center text-gray-700">
                             <Phone className="w-5 h-5 mr-3 text-blue-600" />
                             <div>
@@ -125,7 +128,7 @@ export default function Rover() {
           {/* Activities Grid */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-[#2d5016] text-center mb-12">
-              I Nostri Pilastri
+              Il metodo Rover
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {activities.map((activity, index) => (
@@ -160,7 +163,7 @@ export default function Rover() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-[#2d5016] to-[#15803d] text-white rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6">La Route del Rover</h3>
+              <h3 className="text-2xl font-bold mb-6">La Vita del Rover</h3>
               <div className="space-y-4 text-blue-100">
                 <div className="flex items-center">
                   <Backpack className="w-6 h-6 mr-3 text-blue-300" />
@@ -177,38 +180,8 @@ export default function Rover() {
               </div>
               <div className="mt-6 bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                 <p className="text-center italic">
-                  "La Route non è solo un cammino fisico, ma soprattutto interiore"
+                  "La Srada non è solo un cammino fisico, ma soprattutto interiore"
                 </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Service Projects */}
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-12 mb-16">
-            <h2 className="text-3xl font-bold text-[#2d5016] text-center mb-8">
-              I Nostri Progetti di Servizio
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-8 h-8 text-red-500" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2d5016] mb-3">Mensa per i Poveri</h3>
-                <p className="text-gray-600">Servizio settimanale presso la mensa Caritas locale</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-green-500" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2d5016] mb-3">Casa di Riposo</h3>
-                <p className="text-gray-600">Compagnia e animazione per gli anziani</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <GraduationCap className="w-8 h-8 text-blue-500" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2d5016] mb-3">Doposcuola</h3>
-                <p className="text-gray-600">Aiuto nello studio per bambini in difficoltà</p>
               </div>
             </div>
           </div>

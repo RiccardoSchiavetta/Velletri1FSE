@@ -15,17 +15,17 @@ export default function Esploratori() {
     },
     {
       title: "Tecniche Scout",
-      description: "Nodi, costruzioni pionieristiche, orientamento",
+      description: "Pionieristica, pronto soccorso, espressione scout e topografia",
       icon: "🧭"
     },
     {
-      title: "Gioco di Squadriglia",
+      title: "Vita di Squadriglia",
       description: "Lavoro di squadra e leadership condivisa",
       icon: "👥"
     },
     {
       title: "Servizio",
-      description: "Impegno verso la comunità e i più bisognosi",
+      description: "Impegno verso il prossimo con la buona azione quotidiana",
       icon: "🤝"
     }
   ];
@@ -51,13 +51,13 @@ export default function Esploratori() {
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <div className="text-6xl mb-6">🏕️</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Branca Esploratori
+            Esploratori
             <span className="block text-2xl font-normal mt-2 text-green-100">
               12 - 16 anni
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-green-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            "Estote Parati" - Sii Preparato! La grande avventura della vita all'aria aperta 
+            "Estote Parati" - Siate Pronti! La grande avventura della vita all'aria aperta 
             e della formazione del carattere
           </p>
         </div>
@@ -72,14 +72,19 @@ export default function Esploratori() {
                 L'Avventura della Crescita
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Gli <strong>Esploratori</strong> vivono l'età più bella e formativa della vita scout. 
-                È il momento in cui i ragazzi scoprono se stessi, sviluppano la propria personalità 
-                e imparano il valore della responsabilità e del servizio.
+                In ogni Riparto sono presenti dei piccoli gruppi di amici, chiamati Squadriglie, 
+                dove ognuno ha un incarico di responsabilità: nelle Squadriglie gli Esploratori 
+                vivono la magnifica avventura dello scautismo. Nello spirito della Legge e della Promessa 
+                fanno della vita all’aperto la loro palestra di vita per <strong>sviluppare il carattere, aiutare il prossimo</strong> e, 
+                attraverso la contemplazione del Creato, scoprire l’Amore di Dio per loro.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Organizzati in <strong>Squadriglie</strong>, piccoli gruppi di 6-8 ragazzi, 
-                vivono l'avventura della vita all'aria aperta, imparando le tecniche scout 
-                e sviluppando spirito di corpo e leadership naturale.
+                vivono l'avventura della vita all'aria aperta, dormire in un rifugio costruito dalla propria Squadriglia,
+                 o un preparare un pranzo sul fuoco… sono queste alcune delle attività che caratterizzano la vita di un Esploratore. 
+                 Il continuo “<strong>imparare facendo</strong>”, grazie all’esempio e al servizio degli esploratori più grandi, 
+                permette ad un ragazzo adolescente di vivere avventure solo apparentemente 
+                “im-possibili”, rivelandogli così la bellezza del Creato.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center bg-green-50 px-4 py-2 rounded-full">
@@ -102,13 +107,13 @@ export default function Esploratori() {
                   <div className="space-y-2 text-gray-700">
                     <p><strong>Quando:</strong> Ogni domenica</p>
                     <p><strong>Orario:</strong> 9:30 - 12:30</p>
-                    <p><strong>Dove:</strong> Sede San Clemente e Natura</p>
+                    <p><strong>Dove:</strong> Cattedrale di San Clemente</p>
                   </div>
                 </div>
               </Card>
               <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capi Unità</h3>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
                         <div className="flex items-center justify-center text-gray-700">
                             <Phone className="w-5 h-5 mr-3 text-green-600" />
                             <div>
@@ -162,7 +167,7 @@ export default function Esploratori() {
               </div>
               <div className="mt-6 bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                 <p className="text-center italic">
-                  "Il sistema delle squadriglie è l'applicazione reale della democrazia"
+                  “Il sistema delle squadriglie non è uno dei metodi con cui si può fare lo Scautismo. È l’unico metodo.”
                 </p>
                 <p className="text-center text-sm mt-2 text-green-200">- Baden Powell</p>
               </div>
@@ -191,15 +196,15 @@ export default function Esploratori() {
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <p className="text-xl text-center leading-relaxed text-gray-800 italic">
                   "Con l'aiuto di Dio prometto sul mio onore di fare del mio meglio:<br/><br/>
-                  - per compiere il mio dovere verso Dio e la Patria<br/>
-                  - per aiutare gli altri in ogni circostanza<br/>
+                  - per servide Dio, la Chiesa, la Patria e l'Europa<br/>
+                  - per aiutare il prossimo in ogni circostanza<br/>
                   - per osservare la Legge Scout"
                 </p>
               </div>
               <div className="text-center mt-6">
                 <div className="text-4xl mb-2">🏕️</div>
                 <p className="text-green-700 font-semibold">
-                  <em>"Estote Parati - Sii Preparato!"</em>
+                  <em>"Estote Parati - Siate Pronti"</em>
                 </p>
               </div>
             </div>

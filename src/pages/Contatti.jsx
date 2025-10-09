@@ -271,7 +271,7 @@ export default function Contatti() {
                   Risposta Garantita
                 </h3>
                 <p className="text-stone-200 leading-relaxed">
-                  Ti contatteremo entro 24 ore dalla tua richiesta per fornirti 
+                  Ti contatteremo il prima possibile per fornirti 
                   tutte le informazioni necessarie e organizzare un incontro conoscitivo.
                 </p>
               </CardContent>
