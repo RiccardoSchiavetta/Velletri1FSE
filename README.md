@@ -23,12 +23,12 @@
 Il sito del **Gruppo Scout FSE Velletri 1** è una piattaforma web moderna e interattiva, progettata per unire **comunicazione, informazione e gestione** in un’unica esperienza semplice e intuitiva.
 
 Permette di:
-- Scoprire le sei **branche scout** e i loro valori;
-- Conoscere la **Comunità Capi (Co.Ca.)** e le attività del gruppo;
+- Scoprire le sei **branche** e i loro valori;
+- Conoscere la **Comunità Capi** e le attività del gruppo;
 - Gestire gli **ordini di uniformi** tramite il magazzino online;
 - Contattare facilmente il gruppo per informazioni o iscrizioni.
 
-Tutto realizzato con un design responsive, curato nei dettagli e ispirato all’estetica scout FSE.
+Tutto realizzato con un design responsive curato nei dettagli.
 
 ---
 
@@ -94,7 +94,7 @@ Velletri1fse/
 ├── src/
 │ ├── components/
 │ │ └── ui/
-│ │ ├── alert.tsx
+│ │ └── alert.tsx
 │ │ ├── button.tsx
 │ │ ├── calendar.tsx
 │ │ ├── card.tsx
@@ -103,6 +103,9 @@ Velletri1fse/
 │ │ ├── popover.tsx
 │ │ ├── select.tsx
 │ │ └── textarea.tsx
+│ │
+│ ├──img/
+│ │ └── ...
 │ │
 │ ├── entities/
 │ │ ├── ContactRequest.js
@@ -127,7 +130,7 @@ Velletri1fse/
 │ │ └── Scolte.jsx
 │ │
 │ ├── utils/
-│ │ └── ...
+│ │ └── index.js
 │ │
 │ ├── App.jsx
 │ ├── Layout.jsx
@@ -171,7 +174,7 @@ Velletri1fse/
 
 ## 🚀 Deployment
 
-- L’applicazione è distribuita su Vercel, con:
+L’applicazione è distribuita su Vercel, con:
 
 - Hosting statico e build automatica
 
@@ -196,4 +199,4 @@ Velletri1fse/
 
 ---
 
-## ⚜️ “Lasciare il mondo un po’ migliore di come lo abbiamo trovato.” — Robert Baden-Powell
+⚜️ “Lasciare il mondo un po’ migliore di come lo abbiamo trovato.” — Robert Baden-Powell
