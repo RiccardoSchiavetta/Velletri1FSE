@@ -22,42 +22,36 @@ export default function Home() {
     {
       name: "Lupetti",
       age: "8-11 anni",
-      description: "Scoprire il mondo attraverso il gioco e la giungla di Mowgli",
       color: "from-yellow-400 to-orange-500",
       icon: "🐺"
     },
     {
       name: "Esploratori", 
       age: "12-16 anni",
-      description: "Vivere l'avventura e sviluppare autonomia nella natura",
       color: "from-green-400 to-green-600",
       icon: "🏕️"
     },
     {
       name: "Rover",
       age: "17-21 anni", 
-      description: "Servizio alla comunità e preparazione alla vita adulta",
       color: "from-red-500 to-rose-600",
       icon: "🎒"
     },
     {
       name: "Coccinelle",
       age: "8-11 anni",
-      description: "Vivere la gioia del Bosco Incantato e crescere insieme",
       color: "from-yellow-400 to-orange-500",
       icon: "🐞"
     },
     {
       name: "Guide", 
       age: "12-16 anni",
-      description: "Crescere con spirito di squadra e responsabilità",
       color: "from-green-400 to-green-600",
       icon: "🧭"
     },
     {
       name: "Scolte",
       age: "17-21 anni", 
-      description: "La strada come metafora del cammino verso scelte consapevoli",
       color: "from-red-500 to-rose-600",
       icon: "🔥"
     }
@@ -173,9 +167,6 @@ Scopri tutte le Branche FSE e unisciti a noi nel viaggio più straordinario dell
                     <div className={`font-semibold mb-4 text-lg bg-clip-text text-transparent bg-gradient-to-r ${branch.color}`}>
                       {branch.age}
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-6">
-                      {branch.description}
-                    </p>
                     <div className="flex items-center justify-center text-[#2d5016] group-hover:text-emerald-500 transition-colors">
                       <span className="font-medium">Scopri di più</span>
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
