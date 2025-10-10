@@ -171,30 +171,29 @@ Velletri1fse/
 
 ## 🚀 Deployment
 
--L’applicazione è distribuita su Vercel, con:
+- L’applicazione è distribuita su Vercel, con:
 
--Hosting statico e build automatica
+- Hosting statico e build automatica
 
--Configurazione .env per le chiavi Supabase
+- Configurazione .env per le chiavi Supabase
 
--HTTPS e dominio personalizzato
+- HTTPS e dominio personalizzato
 
 ---
 
 ## 👥 Autori
 
--Gruppo Scout FSE – Velletri 1
--📍 Parrocchia San Clemente, Velletri (RM)
+- Gruppo Scout FSE – Velletri 1
+- 📍 Parrocchia San Clemente, Velletri (RM)
 
 ---
 
 ## 📄 Licenza
 
--Copyright © 2025
--Gruppo Scout FSE Velletri 1
--Tutti i diritti riservati.
+- Copyright © 2025
+- Gruppo Scout FSE Velletri 1
+- Tutti i diritti riservati.
 
 ---
 
-## ⚜️ “Lasciare il mondo un po’ migliore di come lo abbiamo trovato.”
-— Robert Baden-Powell
+## ⚜️ “Lasciare il mondo un po’ migliore di come lo abbiamo trovato.” — Robert Baden-Powell
