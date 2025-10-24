@@ -1,56 +1,202 @@
-# Nano React App Default Javascript Template
+# 🏕️ FSE - Velletri 1
 
-The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
+![React](https://img.shields.io/badge/React-18.0.0-61dafb?style=flat&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat&logo=tailwindcss&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-Backend-3FCF8E?style=flat&logo=supabase&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=flat&logo=vercel)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=flat)
 
-- `npm start` — This will spawn a development server with a default port of `5173`.
-- `npm run build` — This will output a production build in the `dist` directory.
-- `npm run preview` — This will run the production build locally with a default port of `5173` (this will not work if you haven't generated the production build yet).
+> **Il punto di riferimento digitale per il gruppo scout Velletri 1 FSE.**  
+> Scopri informazioni sulle branche e i capi, contattaci per saperne di più e ordina le nostre uniformi in magazzino, tutto da un'unica piattaforma intuitiva.
 
-## Custom port
+---
 
-You can use the `-p` flag to specify a port for development. To do this, you can either run `npm start` with an additional flag:
+### 🔗 **Live Preview**
+👉 [https://velletri1.vercel.app](https://velletri1.vercel.app)
 
+---
+
+
+## 📖 Descrizione
+
+Il sito del **Gruppo Scout FSE Velletri 1** è una piattaforma web moderna e interattiva, progettata per unire **comunicazione, informazione e gestione** in un’unica esperienza semplice e intuitiva.
+
+Permette di:
+- Scoprire le sei **branche** e i loro valori;
+- Conoscere la **Comunità Capi** e le attività del gruppo;
+- Gestire gli **ordini di uniformi** tramite il magazzino online;
+- Contattare facilmente il gruppo per informazioni o iscrizioni.
+
+Tutto realizzato con un design responsive curato nei dettagli.
+
+---
+
+## ✨ Funzionalità Principali
+
+### 🏠 Homepage
+- Presentazione del gruppo e dei valori scout
+- Panoramica delle branche con descrizioni e immagini
+- Layout responsive con animazioni fluide
+
+### 👥 Branche Scout
+- **Lupetti** (8–11 anni) 
+- **Coccinelle** (8–11 anni) 
+- **Esploratori** (12–16 anni)  
+- **Guide** (12–16 anni)
+- **Rover** (17–21 anni)  
+- **Scolte** (17–21 anni) 
+
+Ogni pagina include:
+- Descrizione delle attività e della progressione personale  
+- Dettagli su riunioni e contatti dei capi unità  
+
+### 🛒 Magazzino Uniformi
+- Catalogo prodotti per branca  
+- Gestione taglie e quantità  
+- Calcolo automatico del totale ordine  
+- Layout ottimizzato per mobile e desktop  
+
+### 📧 Contatti
+- Modulo di contatto con campi per età e branca d’interesse  
+- Validazione dei dati e messaggi di conferma  
+
+### 👨‍👩‍👧‍👦 Chi Siamo
+- Presentazione della Comunità Capi  
+- Missione e valori del gruppo  
+
+---
+
+## 🛠️ Tecnologie Utilizzate
+
+### **Frontend**
+- ⚛️ React 18 + Vite  
+- 🎨 Tailwind CSS  
+- 🧱 shadcn/ui (componenti accessibili e moderni)  
+- 🪶 Lucide React (icone leggere)  
+- 🎞️ Framer Motion (animazioni fluide)  
+- 🌐 React Router DOM (navigazione client-side)
+
+### **Backend**
+- 🧩 Supabase – Database PostgreSQL e API REST
+
+### **Librerie di supporto**
+- `@tanstack/react-query` – gestione cache asincrona  
+- `date-fns` – manipolazione delle date  
+- `lodash` – utility JavaScript  
+
+---
+
+## 📁 Struttura del Progetto
+
+Velletri1fse/
+│
+├── src/
+│ ├── components/
+│ │ └── ui/
+│ │ └── alert.tsx
+│ │ ├── button.tsx
+│ │ ├── calendar.tsx
+│ │ ├── card.tsx
+│ │ ├── dropdown-menu.tsx
+│ │ ├── input.tsx
+│ │ ├── popover.tsx
+│ │ ├── select.tsx
+│ │ └── textarea.tsx
+│ │
+│ ├──img/
+│ │ └── ...
+│ │
+│ ├── entities/
+│ │ ├── ContactRequest.js
+│ │ └── OrderRequest.js
+│ │
+│ ├── integrations/
+│ │ └── Core.js
+│ │
+│ ├── lib/
+│ │ └── utils.ts
+│ │
+│ ├── pages/
+│ │ ├── ChiSiamo.jsx
+│ │ ├── Coccinelle.jsx
+│ │ ├── Contatti.jsx
+│ │ ├── Esploratori.jsx
+│ │ ├── Guide.jsx
+│ │ ├── Home.jsx
+│ │ ├── Lupetti.jsx
+│ │ ├── Magazzino.jsx
+│ │ ├── Rover.jsx
+│ │ └── Scolte.jsx
+│ │
+│ ├── utils/
+│ │ └── index.js
+│ │
+│ ├── App.jsx
+│ ├── Layout.jsx
+│ ├── index.jsx
+│ ├── index.css
+│ └── supabaseClient.js
+│
+├── .env
+├── .gitignore
+├── components.json
+├── index.html
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── vite.config.mjs
+└── README.md
+
+
+---
+
+## 🎨 Design e Accessibilità
+
+**Palette colori:**
+```css
+--scout-green: #2d5016;
+--scout-dark-green: #15803d;
+--scout-light-green: #4ade80;
+--scout-beige: #d4b896;
 ```
-npm start -- --port 3000
-```
-
-Or edit the `start` script directly:
-
-```
-vite --port 3000
-```
-
-## Adding styles
-
-You can use CSS files with simple ES2015 `import` statements anywhere in your Javascript:
-
-```js
-import "./index.css";
-```
-
-## Babel transforms
-
-The Babel preset [babel-preset-nano-react-app](https://github.com/nano-react-app/babel-preset-nano-react-app) is used to support the same transforms that Create React App supports.
-
-The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
 
 
-## Deploy to GitHub Pages
+-Design moderno e coerente con i valori FSE
 
-You can also deploy your project using GitHub pages.
-First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
+-Gradients e colori differenziati per ogni branca
 
-`npm i -D gh-pages`
+-Layout responsive per smartphone, tablet e desktop
 
-Use the following scripts for deployment:
+-Animazioni fluide e accessibilità WCAG-compliant
 
-```js
-"scripts": {
-  "start": "vite",
-  "build": "vite build",
-  "predeploy": "rm -rf dist && vite build",
-  "deploy": "gh-pages -d dist"
-},
-```
+---
 
-Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
+## 🚀 Deployment
+
+L’applicazione è distribuita su Vercel, con:
+
+- Hosting statico e build automatica
+
+- Configurazione .env per le chiavi Supabase
+
+- HTTPS e dominio personalizzato
+
+---
+
+## 👥 Autori
+
+- Gruppo Scout FSE – Velletri 1
+- 📍 Parrocchia San Clemente, Velletri (RM)
+
+---
+
+## 📄 Licenza
+
+- Copyright © 2025
+- Gruppo Scout FSE Velletri 1
+- Tutti i diritti riservati.
+
+---
+
+⚜️ “Lasciare il mondo un po’ migliore di come lo abbiamo trovato.” — Robert Baden-Powell
