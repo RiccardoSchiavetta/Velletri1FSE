@@ -90,54 +90,44 @@ Ogni pagina include:
 ## 📁 Struttura del Progetto
 
 Velletri1fse/
-│
 ├── src/
-│ ├── components/
-│ │ └── ui/
-│ │ └── alert.tsx
-│ │ ├── button.tsx
-│ │ ├── calendar.tsx
-│ │ ├── card.tsx
-│ │ ├── dropdown-menu.tsx
-│ │ ├── input.tsx
-│ │ ├── popover.tsx
-│ │ ├── select.tsx
-│ │ └── textarea.tsx
-│ │
-│ ├──img/
-│ │ └── ...
-│ │
-│ ├── entities/
-│ │ ├── ContactRequest.js
-│ │ └── OrderRequest.js
-│ │
-│ ├── integrations/
-│ │ └── Core.js
-│ │
-│ ├── lib/
-│ │ └── utils.ts
-│ │
-│ ├── pages/
-│ │ ├── ChiSiamo.jsx
-│ │ ├── Coccinelle.jsx
-│ │ ├── Contatti.jsx
-│ │ ├── Esploratori.jsx
-│ │ ├── Guide.jsx
-│ │ ├── Home.jsx
-│ │ ├── Lupetti.jsx
-│ │ ├── Magazzino.jsx
-│ │ ├── Rover.jsx
-│ │ └── Scolte.jsx
-│ │
-│ ├── utils/
-│ │ └── index.js
-│ │
-│ ├── App.jsx
-│ ├── Layout.jsx
-│ ├── index.jsx
-│ ├── index.css
-│ └── supabaseClient.js
-│
+│   ├── components/
+│   │   └── ui/
+│   │       ├── alert.tsx
+│   │       ├── button.tsx
+│   │       ├── calendar.tsx
+│   │       ├── card.tsx
+│   │       ├── dropdown-menu.tsx
+│   │       ├── input.tsx
+│   │       ├── popover.tsx
+│   │       ├── select.tsx
+│   │       └── textarea.tsx
+│   ├── img/
+│   ├── entities/
+│   │   ├── ContactRequest.js
+│   │   └── OrderRequest.js
+│   ├── integrations/
+│   │   └── Core.js
+│   ├── lib/
+│   │   └── utils.ts
+│   ├── pages/
+│   │   ├── ChiSiamo.jsx
+│   │   ├── Coccinelle.jsx
+│   │   ├── Contatti.jsx
+│   │   ├── Esploratori.jsx
+│   │   ├── Guide.jsx
+│   │   ├── Home.jsx
+│   │   ├── Lupetti.jsx
+│   │   ├── Magazzino.jsx
+│   │   ├── Rover.jsx
+│   │   └── Scolte.jsx
+│   ├── utils/
+│   │   └── index.js
+│   ├── App.jsx
+│   ├── Layout.jsx
+│   ├── index.jsx
+│   ├── index.css
+│   └── supabaseClient.js
 ├── .env
 ├── .gitignore
 ├── components.json
@@ -147,7 +137,6 @@ Velletri1fse/
 ├── tsconfig.json
 ├── vite.config.mjs
 └── README.md
-
 
 ---
 
