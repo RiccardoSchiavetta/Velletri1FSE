@@ -125,7 +125,7 @@ export default function Magazzino() {
   const [showSuccess, setShowSuccess] = useState(false);
   const [error, setError] = useState(null);
   const [userInfo, setUserInfo] = useState({ name: "", email: "", phone: "" });
-  const [activeBranches, setActiveBranches] = useState(branchOrder);
+  const [activeBranches, setActiveBranches] = useState([]);
   
   const handleAddToCart = (itemToAdd) => {
     setCart(prevCart => {
@@ -202,6 +202,10 @@ export default function Magazzino() {
         : [...prev, branch]
     );
   };
+
+  const branchesToDisplay = activeBranches.length > 0
+    ? activeBranches
+    : branchOrder;
   
   return (
     <div className="min-h-screen bg-stone-50 py-12">
@@ -218,7 +222,10 @@ export default function Magazzino() {
           </p>
         </div>
 
-        <div className="flex justify-center mb-8">
+        <div className="flex items-center justify-center gap-4 mb-8">
+          <h3 className="text-lg font-semibold text-gray-700">
+            Filtri:
+          </h3>
           <div className="flex flex-wrap gap-2 justify-center">
             {branchOrder.map(branch => (
               <Button
@@ -233,11 +240,12 @@ export default function Magazzino() {
           </div>
         </div>
 
+
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
              <div className="space-y-12">
               {branchOrder
-                .filter(branch => activeBranches.includes(branch))
+                .filter(branch => branchesToDisplay.includes(branch))
                 .map(branch => (
                 <div key={branch}>
                   <h2 className="text-2xl font-bold text-[#2d5016] mb-4 border-b-2 border-[#4ade80] pb-2">{branch}</h2>
