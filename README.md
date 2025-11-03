@@ -89,6 +89,7 @@ Ogni pagina include:
 
 ## 📁 Struttura del Progetto
 
+'''
 Velletri1fse/
 ├── src/
 │   ├── components/
@@ -137,6 +138,7 @@ Velletri1fse/
 ├── tsconfig.json
 ├── vite.config.mjs
 └── README.md
+'''
 
 ---
 
