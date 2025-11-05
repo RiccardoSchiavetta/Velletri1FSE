@@ -112,13 +112,13 @@ export default function Lupetti() {
                     </div>
                     </div>
                 </Card>
-                <Card className="border-0 shadow-lg">
+              <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
+                      <div className="text-5xl mb-6 flex items-center justify-center">👤</div>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Akela</h3>
                         <div className="flex items-center justify-center text-gray-700">
-                            <Phone className="w-5 h-5 mr-3 text-green-600" />
                             <div>
-                                <p className="font-semibold">Akela: +39 334 1122333</p>
+                                <p className="font-semibold">Marco Molteni</p>
                             </div>
                         </div>
                     </CardContent>

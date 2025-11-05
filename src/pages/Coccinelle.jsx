@@ -114,13 +114,13 @@ export default function Coccinelle() {
                   </div>
                 </div>
               </Card>
-               <Card className="border-0 shadow-lg">
+              <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
+                      <div className="text-5xl mb-6 flex items-center justify-center">👤</div>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Capo Cerchio</h3>
                         <div className="flex items-center justify-center text-gray-700">
-                            <Phone className="w-5 h-5 mr-3 text-red-600" />
                             <div>
-                                <p className="font-semibold">Capo Cerchio: +39 335 4455666</p>
+                                <p className="font-semibold">Elisa Cianfarani</p>
                             </div>
                         </div>
                     </CardContent>

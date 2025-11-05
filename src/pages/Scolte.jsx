@@ -112,11 +112,11 @@ export default function Scolte() {
               </Card>
               <Card className="border-0 shadow-lg">
                     <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Contatti Capo Unità</h3>
+                      <div className="text-5xl mb-6 flex items-center justify-center">👤</div>
+                        <h3 className="text-xl font-bold text-[#2d5016] mb-4 text-center">Capo Fuoco</h3>
                         <div className="flex items-center justify-center text-gray-700">
-                            <Phone className="w-5 h-5 mr-3 text-rose-600" />
                             <div>
-                                <p className="font-semibold">Capo Fuoco: +39 331 5656567</p>
+                                <p className="font-semibold">Camilla Mattoccia</p>
                             </div>
                         </div>
                     </CardContent>

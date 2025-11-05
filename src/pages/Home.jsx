@@ -107,7 +107,7 @@ export default function Home() {
             <Link to={createPageUrl("Contatti")}>
               <Button size="lg" className="bg-[#4ade80] hover:bg-[#22c55e] text-[#2d5016] font-semibold px-8 py-4 text-lg rounded-xl shadow-lg">
                 <Heart className="w-5 h-5 mr-2" />
-                Iscrivi tuo figlio
+                Iscrivi i tuoi figli
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
