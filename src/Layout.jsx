@@ -158,7 +158,7 @@ export default function Layout({ children, currentPageName }) {
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-4 h-4 mr-2 text-[#4ade80]" />
-                  <a href="tel:065884430">065884430</a>
+                  <a href="tel: 069632239"> 069632239</a>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-2 text-[#4ade80]" />
