@@ -56,7 +56,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex justify-between items-center h-20">
             <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">  {/* Changed to "/" */}
               <div className="w-12 h-12 flex items-center justify-center">
-                 <img src="/src/img/FseIcon.ico" alt="Logo FSE Velletri 1" className="w-10 h-10 object-contain" />
+                 <img src="/img/FseIcon.ico" alt="Logo FSE Velletri 1" className="w-10 h-10 object-contain" />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-[#2d5016]">FSE - Velletri 1</h1>

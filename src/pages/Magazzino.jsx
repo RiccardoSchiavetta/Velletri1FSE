@@ -12,49 +12,49 @@ import { Package, Send, CheckCircle2, ShoppingCart, Minus, Plus, Info, Euro } fr
 
 const uniformProducts = {
   "Lupetti": [
-    { name: "MAGLIETTA VERDE", sizes: ["5 / 6 ANNI", "6 / 7 ANNI", "7 / 8 ANNI", "9 / 10 ANNI", "11 / 12 ANNI", "13 / 14 ANNI", "XS", "S"], imageUrl: "/src/img/MagliaLupetto.png", price: 16.00 },
-    { name: "MAGLIONE VERDE", sizes: ["5 / 6 ANNI", "6 / 7 ANNI", "7 / 8 ANNI", "9 / 10 ANNI", "11 / 12 ANNI", "13 / 14 ANNI", "XS", "S"], imageUrl: "/src/img/MaglioneLupetto.png", price: 24.00 },
-    { name: "BERRETTO LUPETTO", sizes: ["XXS circonf.testa 51/52", "XS circonf.testa 53/54", "S circonf.testa 55/56", "M circonf.testa 57/58", "L circonf.testa 59/60"], imageUrl: "/src/img/BerrettoLupetto.png", price: 14.00 },
-    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniCorti.png", price: 24.00 },
-    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniLunghi.png", price: 28.00 },
-    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
+    { name: "MAGLIETTA VERDE", sizes: ["5 / 6 ANNI", "6 / 7 ANNI", "7 / 8 ANNI", "9 / 10 ANNI", "11 / 12 ANNI", "13 / 14 ANNI", "XS", "S"], imageUrl: "/img/MagliaLupetto.png", price: 16.00 },
+    { name: "MAGLIONE VERDE", sizes: ["5 / 6 ANNI", "6 / 7 ANNI", "7 / 8 ANNI", "9 / 10 ANNI", "11 / 12 ANNI", "13 / 14 ANNI", "XS", "S"], imageUrl: "/img/MaglioneLupetto.png", price: 24.00 },
+    { name: "BERRETTO LUPETTO", sizes: ["XXS circonf.testa 51/52", "XS circonf.testa 53/54", "S circonf.testa 55/56", "M circonf.testa 57/58", "L circonf.testa 59/60"], imageUrl: "/img/BerrettoLupetto.png", price: 14.00 },
+    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/PantaloniCorti.png", price: 24.00 },
+    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/PantaloniLunghi.png", price: 28.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/img/Cintura.png", price: 18.00 }
   ],
   "Coccinelle": [
-    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaBlu.png", price: 24.00 },
-    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
-    { name: "ZUCCHETTO COCCINELLA", sizes: ["TAGLIA UNICA"], imageUrl: "/src/img/Zucchetto.png", price: 14.00 },
-    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/GonnaPantalone.png", price: 24.00 },
-    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
+    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/img/CamiciaBlu.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/img/MaglioneBlu.png", price: 28.00 },
+    { name: "ZUCCHETTO COCCINELLA", sizes: ["TAGLIA UNICA"], imageUrl: "/img/Zucchetto.png", price: 14.00 },
+    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/GonnaPantalone.png", price: 24.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/img/Cintura.png", price: 18.00 }
   ],
   "Esploratori": [
-    { name: "CAMICIA KHAKI", sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaScout.png", price: 24.00 },
-    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
-    { name: "CAPPELLONE KHAKI", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/src/img/CappelloneScout.png", price: 36.00 },
-    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniCorti.png", price: 24.00 },
-    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniLunghi.png", price: 28.00 },
-    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
+    { name: "CAMICIA KHAKI", sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/img/CamiciaScout.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/img/MaglioneBlu.png", price: 28.00 },
+    { name: "CAPPELLONE KHAKI", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/img/CappelloneScout.png", price: 36.00 },
+    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/PantaloniCorti.png", price: 24.00 },
+    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/PantaloniLunghi.png", price: 28.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/img/Cintura.png", price: 18.00 }
   ],
   "Guide": [
-    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaBlu.png", price: 24.00 },
-    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
-    { name: "CAPPELLONE BLU", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/src/img/CappelloneBlu.png", price: 36.00 },
-    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/GonnaPantalone.png", price: 24.00 },
-    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
+    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/img/CamiciaBlu.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/img/MaglioneBlu.png", price: 28.00 },
+    { name: "CAPPELLONE BLU", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/img/CappelloneBlu.png", price: 36.00 },
+    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/GonnaPantalone.png", price: 24.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/img/Cintura.png", price: 18.00 }
   ],
   "Rover": [
-    { name: "CAMICIA KHAKI", sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaScout.png", price: 24.00 },
-    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
-    { name: "CAPPELLONE KHAKI", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/src/img/CappelloneScout.png", price: 36.00 },
-    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniCorti.png", price: 24.00 },
-    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/PantaloniLunghi.png", price: 28.00 },
-    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
+    { name: "CAMICIA KHAKI", sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/img/CamiciaScout.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/img/MaglioneBlu.png", price: 28.00 },
+    { name: "CAPPELLONE KHAKI", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/img/CappelloneScout.png", price: 36.00 },
+    { name: "PANTALONI VELLUTO BLU CORTI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/PantaloniCorti.png", price: 24.00 },
+    { name: "PANTALONI VELLUTO BLU LUNGHI", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/PantaloniLunghi.png", price: 28.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/img/Cintura.png", price: 18.00 }
   ],
   "Scolte": [
-    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/src/img/CamiciaBlu.png", price: 24.00 },
-    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/src/img/MaglioneBlu.png", price: 28.00 },
-    { name: "BASCO NERO", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/src/img/Basco.png", price: 12.00 },
-    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/src/img/GonnaPantalone.png", price: 24.00 },
-    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/src/img/Cintura.png", price: 18.00 }
+    { name: "CAMICIA BLU", sizes: ["8 ANNI", "10 ANNI", "12 ANNI", "XS", "S", "M", "L", "XL", "XXL", "XXXL"], imageUrl: "/img/CamiciaBlu.png", price: 24.00 },
+    { name: "MAGLIONE BLU", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"], imageUrl: "/img/MaglioneBlu.png", price: 28.00 },
+    { name: "BASCO NERO", sizes: ["54", "55", "56", "57", "58", "59", "60", "62"], imageUrl: "/img/Basco.png", price: 12.00 },
+    { name: "GONNA PANTALONE", sizes: ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"], imageUrl: "/img/GonnaPantalone.png", price: 24.00 },
+    { name: "CINTURA IN CUOIO", sizes: ["CM 80", "CM 90", "CM 100", "CM 110", "CM 120", "CM 130", "CM 140"], imageUrl: "/img/Cintura.png", price: 18.00 }
   ]
 };
 

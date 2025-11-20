@@ -90,7 +90,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-4 text-center">
           <div className="mb-8">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 rounded-full mb-6 backdrop-blur-sm">
-              <img src="/src/img/FseIcon.ico" alt="Logo FSE Velletri 1" className="w-12 h-12 object-contain" />
+              <img src="/img/FseIcon.ico" alt="Logo FSE Velletri 1" className="w-12 h-12 object-contain" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               FSE - Velletri 1
@@ -120,7 +120,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 lg:h-auto lg:aspect-square rounded-2xl overflow-hidden shadow-2xl group">
-                <img src="/src/img/FotoGruppo.jpg" alt="Gruppo Scout FSE Velletri 1" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src="/img/FotoGruppo.jpg" alt="Gruppo Scout FSE Velletri 1" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
             <div>
