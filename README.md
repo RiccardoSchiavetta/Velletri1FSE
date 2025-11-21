@@ -91,6 +91,24 @@ Ogni pagina include:
 
 ```
 Velletri1fse/
+├── public/
+│   ├── img/
+│   │   ├── Basco.png
+│   │   ├── BerrettoLupetto.png
+│   │   ├── CamiciaBlu.png
+│   │   ├── CamiciaScout.png
+│   │   ├── CappelloneBlu.png
+│   │   ├── CappelloneScout.png
+│   │   ├── Cintura.png
+│   │   ├── FotoGruppo.jpg
+│   │   ├── FseIcon.ico
+│   │   ├── GonnaPantalone.png
+│   │   ├── MagliaLupetto.png
+│   │   ├── MaglioneBlu.png
+│   │   ├── MaglioneLupetto.png
+│   │   ├── PantaloniCorti.png
+│   │   ├── PantaloniLunghi.png
+│   │   ├── Zucchetto.png
 ├── src/
 │   ├── components/
 │   │   └── ui/
@@ -103,7 +121,6 @@ Velletri1fse/
 │   │       ├── popover.tsx
 │   │       ├── select.tsx
 │   │       └── textarea.tsx
-│   ├── img/
 │   ├── entities/
 │   │   ├── ContactRequest.js
 │   │   └── OrderRequest.js
