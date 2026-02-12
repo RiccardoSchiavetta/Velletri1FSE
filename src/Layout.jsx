@@ -162,7 +162,7 @@ export default function Layout({ children, currentPageName }) {
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-2 text-[#4ade80]" />
-                  <a href="mailto:velletri1fse@gmail.com">velletri1fse@gmail.com</a>
+                  <a href="mailto:velletri_1@fse.it">velletri_1@fse.it</a>
                 </div>
               </div>
             </div>

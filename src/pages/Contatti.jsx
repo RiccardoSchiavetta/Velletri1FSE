@@ -239,11 +239,11 @@ export default function Contatti() {
                   </div>
                   <div className="flex items-center">
                     <Phone className="w-5 h-5 mr-3 text-[#4ade80]" />
-                    <span>+39 333 1234567</span>
+                    <span>069632239</span>
                   </div>
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 mr-3 text-[#4ade80]" />
-                    <span>gruppo@velletri1.it</span>
+                    <span>velletri_1@fse.it</span>
                   </div>
                 </div>
               </CardContent>
