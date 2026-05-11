@@ -13,7 +13,7 @@ export default async function handler(req, res) {
   try {
 
     const { data, error } = await supabase
-      .from('contact_request') 
+      .from('contact_requests') 
       .select('id')
       .limit(1);
 
